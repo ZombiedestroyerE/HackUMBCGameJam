@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ccrsxkqxlc7p"]
+
+[ext_resource type="PackedScene" uid="uid://byqh1gccyhtln" path="res://scenes/TheKing.tscn" id="1_1u57c"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6tj1q"]
+
+[node name="Castle" type="Node2D" unique_id=1405725170]
+
+[node name="TheKing" parent="." unique_id=1973962456 instance=ExtResource("1_1u57c")]
+position = Vector2(-1, 0)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=234465192]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=574040765]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=191257600]
+shape = SubResource("WorldBoundaryShape2D_6tj1q")
