@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://dviu7m651qp68"]
+
+[node name="Death" type="Area2D" unique_id=1788043022]
+collision_mask = 2
