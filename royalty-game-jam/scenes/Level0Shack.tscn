@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cx1i3agm14wih"]
 
-[ext_resource type="PackedScene" uid="uid://byqh1gccyhtln" path="res://scenes/TheKing.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://byqh1gccyhtln" path="res://scenes/TheKing.tscn" id="1_y16jn"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3fh1"]
 
-[node name="Game" type="Node2D" unique_id=1718531690]
+[node name="Shack" type="Node2D" unique_id=1718531690]
 
-[node name="TheKing" parent="." unique_id=1973962456 instance=ExtResource("1_uwrxv")]
+[node name="TheKing" parent="." unique_id=1973962456 instance=ExtResource("1_y16jn")]
 position = Vector2(-1, 0)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1417723198]
