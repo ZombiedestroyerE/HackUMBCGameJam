@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dw4y07iljjv7u"]
+
+[ext_resource type="AudioStream" uid="uid://xf6ja53isei8" path="res://assets/hackUMBC_BossMusic.mp3" id="1_p34rl"]
+
+[node name="Node2D" type="AudioStreamPlayer" unique_id=1525434199]
+stream = ExtResource("1_p34rl")
+autoplay = true

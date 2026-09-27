@@ -15,6 +15,10 @@ run/main_scene="uid://cx1i3agm14wih"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Bgmusic="*uid://dw4y07iljjv7u"
+
 [display]
 
 window/size/viewport_height=653
