@@ -50,7 +50,7 @@ position = Vector2(27, -112)
 scale = Vector2(0.35169765, 0.35169765)
 sprite_frames = SubResource("SpriteFrames_bfjjh")
 autoplay = "default"
-frame_progress = 0.13005947
+frame_progress = 0.5584072
 
 [node name="Death" parent="AnimatedSprite2D" unique_id=1788043022 instance=ExtResource("2_4ra3w")]
 position = Vector2(-1875.0208, -356.07965)
