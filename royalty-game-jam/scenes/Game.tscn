@@ -190,7 +190,7 @@ size = Vector2(80.5, 35)
 script = ExtResource("1_78awf")
 
 [node name="TheKing" parent="." unique_id=1973962456 instance=ExtResource("1_cpr0p")]
-position = Vector2(3, -3)
+position = Vector2(-1, -6)
 collision_layer = 6
 collision_mask = 6
 
@@ -253,3 +253,5 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinCon" unique_id=4841917]
 position = Vector2(4900, -1500)
 shape = SubResource("RectangleShape2D_ppc74")
+
+[connection signal="body_entered" from="WinCon" to="WinCon" method="_on_body_entered"]
