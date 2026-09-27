@@ -17,6 +17,8 @@ config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_height=653
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -46,6 +48,7 @@ attack={
 [physics]
 
 3d/physics_engine="Jolt Physics"
+2d/default_gravity=350.0
 
 [rendering]
 
