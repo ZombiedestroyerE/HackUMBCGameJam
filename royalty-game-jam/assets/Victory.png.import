@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4my83n832742"
-path="res://.godot/imported/Screenshot 2026-09-27 at 08-02-30 Victory.gif - GIF to JPG converter.png-0a87775d3432098e2fc24633f52b5548.ctex"
+uid="uid://j1f7onjjau0j"
+path="res://.godot/imported/Victory.png-06c361e84db08ce922ce5044b395fce0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Screenshot 2026-09-27 at 08-02-30 Victory.gif - GIF to JPG converter.png"
-dest_files=["res://.godot/imported/Screenshot 2026-09-27 at 08-02-30 Victory.gif - GIF to JPG converter.png-0a87775d3432098e2fc24633f52b5548.ctex"]
+source_file="res://assets/Victory.png"
+dest_files=["res://.godot/imported/Victory.png-06c361e84db08ce922ce5044b395fce0.ctex"]
 
 [params]
 

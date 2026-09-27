@@ -33,8 +33,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="CanvasLayer" unique_id=379756691]
+[node name="VictoryScreen" type="CanvasLayer" unique_id=379756691]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=774544586]
 sprite_frames = SubResource("SpriteFrames_q3fh1")
-frame_progress = 0.063727334
+frame_progress = 0.12867096

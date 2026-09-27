@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://cuw8nm063e68c"]
-
-[ext_resource type="Script" uid="uid://ccxuf18doxrrs" path="res://win_con.gd" id="1_nufix"]
-
-[node name="WinCon" type="Area2D" unique_id=1378104022]
-collision_mask = 2
-script = ExtResource("1_nufix")
