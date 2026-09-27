@@ -1,0 +1,32 @@
+[gd_scene format=4 uid="uid://be4ga4h72nig5"]
+
+[ext_resource type="Texture2D" uid="uid://7h4wkkvx16vr" path="res://assets/Block.png" id="1_nvgqk"]
+[ext_resource type="Script" uid="uid://ctu5fryqfaglp" path="res://scripts/level_1.gd" id="1_odhdn"]
+[ext_resource type="PackedScene" uid="uid://dbkfojiu6t2sw" path="res://scenes/Knight.tscn" id="3_dw26h"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n4lk0"]
+texture = ExtResource("1_nvgqk")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_q3fh1"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_n4lk0")
+
+[node name="LevelRoot" type="Node2D" unique_id=139125495]
+script = ExtResource("1_odhdn")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1604602322]
+tile_map_data = PackedByteArray("AAAAAP//AAAAAAEAAAAAAAAAAAAAAAEAAAD//wAAAAAAAAEAAAD/////AAAAAAEAAAABAP//AAAAAAEAAAABAAAAAAAAAAEAAAD+////AAAAAAEAAAD+/wAAAAAAAAEAAAD+//7/AAABAAAAAAD///7/AAABAAAAAAAAAP7/AAABAAAAAAABAP7/AAABAAAAAAD9////AAAAAAEAAAD9/wAAAAAAAAEAAAD9//7/AAABAAAAAAACAP//AAAAAAEAAAACAAAAAAAAAAEAAAACAP7/AAABAAAAAAA=")
+tile_set = SubResource("TileSet_q3fh1")
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1683125708]
+
+[node name="Knight" parent="Enemies" unique_id=481286723 instance=ExtResource("3_dw26h")]
+position = Vector2(-1, -32)

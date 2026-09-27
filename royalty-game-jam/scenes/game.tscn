@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://cx1i3agm14wih"]
 
+[ext_resource type="Script" uid="uid://wc1pjro82l5t" path="res://scenes/game.gd" id="1_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://byqh1gccyhtln" path="res://scenes/TheKing.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://be4ga4h72nig5" path="res://scenes/Level1.tscn" id="3_lnu2h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3fh1"]
 
 [node name="Game" type="Node2D" unique_id=1718531690]
+script = ExtResource("1_lbhrr")
 
 [node name="TheKing" parent="." unique_id=1973962456 instance=ExtResource("1_uwrxv")]
 position = Vector2(-1, 0)
@@ -14,4 +17,8 @@ position = Vector2(-1, 0)
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=173210782]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=950635445]
+position = Vector2(1, 58)
 shape = SubResource("WorldBoundaryShape2D_q3fh1")
+
+[node name="LevelRoot" parent="." unique_id=139125495 instance=ExtResource("3_lnu2h")]
+position = Vector2(0, 33)
