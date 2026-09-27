@@ -13,7 +13,26 @@ var has_sword = false
 func _physics_process(delta: float) -> void:
 	
 	if (if_alive):
-		# Add the gravity.
+		var direction := Input.get_axis("move_left", "move_right")
+		
+		# if king has gotten sword change sprite animation
+		if(!(has_sword)):
+			if direction == 0:
+				animated_sprite.play("idle")
+			elif direction != 0:
+				animated_sprite.play("run")
+		else:
+			if direction == 0:
+				animated_sprite.play("idle_sword")
+			elif direction != 0:
+				animated_sprite.play("run_sword")
+			sword_attacks()
+			
+
+		# move_and_slide()
+
+func movement(delta, direction)->void: 
+	# Add the gravity.
 		if not is_on_floor():
 			velocity += get_gravity() * delta
 
@@ -24,32 +43,27 @@ func _physics_process(delta: float) -> void:
 		# Get the input direction and handle the movement/deceleration.
 		# As good practice, you should replace UI actions with custom gameplay actions.
 		
-		var direction := Input.get_axis("move_left", "move_right")
+		
 		if direction > 0:
 			animated_sprite.flip_h = false
 		elif direction < 0:
 			animated_sprite.flip_h = true
 			
-		if direction == 0:
-			animated_sprite.play("idle")
-		elif direction != 0:
-			animated_sprite.play("run");
+		
 		
 		if direction:
 			velocity.x = direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
-			
-		if(!has_sword):
-			animated_sprite.play("")
-			
-
-		move_and_slide()
 
 func die() -> void:
 	if_alive = true
 	print("Death")
 	
-# func sword() -> void:
+func sword_attacks() -> void:
+	pass
+	
+
+
 	
 	
