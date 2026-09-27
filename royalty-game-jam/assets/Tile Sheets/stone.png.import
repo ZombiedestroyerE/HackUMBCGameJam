@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi0vpq5qpg527"
-path="res://.godot/imported/TheKingInSquare.png-a4f87ac10f9182dd5126c1e1428d37cc.ctex"
+uid="uid://d0q5j5bdrt7yi"
+path="res://.godot/imported/stone.png-519235f91497265964d72cb76648f471.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TheKingInSquare.png"
-dest_files=["res://.godot/imported/TheKingInSquare.png-a4f87ac10f9182dd5126c1e1428d37cc.ctex"]
+source_file="res://assets/Tile Sheets/stone.png"
+dest_files=["res://.godot/imported/stone.png-519235f91497265964d72cb76648f471.ctex"]
 
 [params]
 
