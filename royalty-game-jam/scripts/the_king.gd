@@ -3,8 +3,8 @@ extends CharacterBody2D
 
 const SPEED = 250.0
 const JUMP_VELOCITY = -300.
-var alive = false
 var if_alive = true
+var has_sword = false 
 
 
 
@@ -39,9 +39,17 @@ func _physics_process(delta: float) -> void:
 			velocity.x = direction * SPEED
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+			
+		if(!has_sword):
+			animated_sprite.play("")
+			
 
 		move_and_slide()
 
 func die() -> void:
 	if_alive = true
 	print("Death")
+	
+# func sword() -> void:
+	
+	
