@@ -247,6 +247,8 @@ position = Vector2(2199, -1341.25)
 shape = SubResource("RectangleShape2D_4dl8m")
 
 [node name="WinCon" parent="." unique_id=1378104022 instance=ExtResource("14_7ua8r")]
+collision_layer = 7
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WinCon" unique_id=4841917]
 position = Vector2(4900, -1500)
