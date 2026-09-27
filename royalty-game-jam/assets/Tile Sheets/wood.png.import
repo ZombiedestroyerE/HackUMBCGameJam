@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi0vpq5qpg527"
-path="res://.godot/imported/TheKingInSquare.png-a4f87ac10f9182dd5126c1e1428d37cc.ctex"
+uid="uid://bmkquwnermmyt"
+path="res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/TheKingInSquare.png"
-dest_files=["res://.godot/imported/TheKingInSquare.png-a4f87ac10f9182dd5126c1e1428d37cc.ctex"]
+source_file="res://assets/Tile Sheets/wood.png"
+dest_files=["res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"]
 
 [params]
 
