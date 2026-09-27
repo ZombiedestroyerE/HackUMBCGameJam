@@ -47,11 +47,16 @@ height = 1110.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2075268489]
 position = Vector2(27, -112)
+scale = Vector2(0.35169765, 0.35169765)
 sprite_frames = SubResource("SpriteFrames_bfjjh")
+autoplay = "default"
+frame_progress = 0.13005947
 
 [node name="Death" parent="AnimatedSprite2D" unique_id=1788043022 instance=ExtResource("2_4ra3w")]
-position = Vector2(-1164, -175)
+position = Vector2(-1875.0208, -356.07965)
+scale = Vector2(1.4733968, 1.4704746)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Death" unique_id=344725896]
 position = Vector2(1330, 267)
+scale = Vector2(-1.3181263, -1.3181263)
 shape = SubResource("CapsuleShape2D_bfjjh")
