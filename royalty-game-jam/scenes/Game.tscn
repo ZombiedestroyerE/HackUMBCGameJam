@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bvnmd8xb2s2fh" path="res://assets/Tile Sheets/Door.png" id="6_400sg"]
 [ext_resource type="Texture2D" uid="uid://xxq57qmrf5at" path="res://assets/Tile Sheets/Spikes.png" id="6_kiw3p"]
 [ext_resource type="Texture2D" uid="uid://cr2vi528xp5av" path="res://assets/Tile Sheets/Sky.png" id="8_g4kob"]
+[ext_resource type="PackedScene" uid="uid://1g40r7hq0r3d" path="res://scenes/enemy.tscn" id="13_2rd6h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q3fh1"]
 
@@ -207,3 +208,6 @@ shape = SubResource("RectangleShape2D_bfjjh")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Death" unique_id=113027015]
 position = Vector2(-299, 5)
 shape = SubResource("RectangleShape2D_xduqr")
+
+[node name="enemy" parent="." unique_id=1800367526 instance=ExtResource("13_2rd6h")]
+position = Vector2(1479, 9)

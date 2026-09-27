@@ -48,7 +48,6 @@ attack={
 [physics]
 
 3d/physics_engine="Jolt Physics"
-2d/default_gravity=350.0
 
 [rendering]
 
