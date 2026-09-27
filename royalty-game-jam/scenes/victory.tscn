@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dr3u5q33wds2c"]
+
+[ext_resource type="Texture2D" uid="uid://j1f7onjjau0j" path="res://assets/Victory.png" id="1_le47n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xduqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_le47n")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Victory" type="Node2D" unique_id=280746043]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1364352474]
+sprite_frames = SubResource("SpriteFrames_xduqr")
