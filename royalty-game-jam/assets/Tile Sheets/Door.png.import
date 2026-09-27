@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjxrhcxdxrvxd"
-path="res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"
+uid="uid://bvnmd8xb2s2fh"
+path="res://.godot/imported/Door.png-a853909bb3f25b1af1322ee3e8ccec16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tile Sheets/wood.png"
-dest_files=["res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"]
+source_file="res://assets/Tile Sheets/Door.png"
+dest_files=["res://.godot/imported/Door.png-a853909bb3f25b1af1322ee3e8ccec16.ctex"]
 
 [params]
 

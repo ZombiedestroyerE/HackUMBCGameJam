@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjxrhcxdxrvxd"
-path="res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"
+uid="uid://bdqpmmhi2uwbk"
+path="res://.godot/imported/New Piskel.png-ceb04bbfa6194e168ecb51cd670f4662.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tile Sheets/wood.png"
-dest_files=["res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"]
+source_file="res://assets/New Piskel.png"
+dest_files=["res://.godot/imported/New Piskel.png-ceb04bbfa6194e168ecb51cd670f4662.ctex"]
 
 [params]
 

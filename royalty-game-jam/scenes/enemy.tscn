@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://1g40r7hq0r3d"]
+
+[ext_resource type="Texture2D" uid="uid://da2os2mi5on73" path="res://assets/Characters/Assasin.png" id="1_md0e3"]
+[ext_resource type="PackedScene" uid="uid://dviu7m651qp68" path="res://scenes/death.tscn" id="2_4ra3w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+atlas = ExtResource("1_md0e3")
+region = Rect2(0, 0, 1536, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+atlas = ExtResource("1_md0e3")
+region = Rect2(1536, 0, 1536, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+atlas = ExtResource("1_md0e3")
+region = Rect2(3072, 0, 1536, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
+atlas = ExtResource("1_md0e3")
+region = Rect2(4608, 0, 1536, 2048)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bfjjh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uy6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4w8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xwavj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nenq2")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bfjjh"]
+radius = 295.0
+height = 1110.0
+
+[node name="enemy" type="Node2D" unique_id=1800367526]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2075268489]
+position = Vector2(27, -112)
+scale = Vector2(0.35169765, 0.35169765)
+sprite_frames = SubResource("SpriteFrames_bfjjh")
+autoplay = "default"
+frame_progress = 0.5584072
+
+[node name="Death" parent="AnimatedSprite2D" unique_id=1788043022 instance=ExtResource("2_4ra3w")]
+position = Vector2(-1875.0208, -356.07965)
+scale = Vector2(1.4733968, 1.4704746)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Death" unique_id=344725896]
+position = Vector2(1330, 267)
+scale = Vector2(-1.3181263, -1.3181263)
+shape = SubResource("CapsuleShape2D_bfjjh")

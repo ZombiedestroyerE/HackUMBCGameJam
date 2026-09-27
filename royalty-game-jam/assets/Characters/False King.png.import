@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjxrhcxdxrvxd"
-path="res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"
+uid="uid://m0d4it1jugcu"
+path="res://.godot/imported/False King.png-1b2dfef6386a67281a604cb1195a342d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tile Sheets/wood.png"
-dest_files=["res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"]
+source_file="res://assets/Characters/False King.png"
+dest_files=["res://.godot/imported/False King.png-1b2dfef6386a67281a604cb1195a342d.ctex"]
 
 [params]
 

@@ -1,15 +1,31 @@
 [gd_scene format=3 uid="uid://byqh1gccyhtln"]
 
-[ext_resource type="Script" uid="uid://c8maweknvo572" path="res://scenes/the_king.gd" id="1_g8maf"]
-[ext_resource type="Texture2D" uid="uid://bi0vpq5qpg527" path="res://assets/TheKingInSquare.png" id="2_5h50b"]
+[ext_resource type="Script" uid="uid://c8maweknvo572" path="res://scripts/the_king.gd" id="1_g8maf"]
+[ext_resource type="Texture2D" uid="uid://batioqtxtwjs0" path="res://assets/Characters/True King.png" id="2_g8maf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufjxv"]
-atlas = ExtResource("2_5h50b")
-region = Rect2(0, 0, 32, 32)
+atlas = ExtResource("2_g8maf")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouaxw"]
+atlas = ExtResource("2_g8maf")
+region = Rect2(2048, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rb7s"]
+atlas = ExtResource("2_g8maf")
+region = Rect2(4096, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8maf"]
+atlas = ExtResource("2_g8maf")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5h50b"]
+atlas = ExtResource("2_g8maf")
+region = Rect2(2048, 0, 2048, 2048)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6fjlw"]
-atlas = ExtResource("2_5h50b")
-region = Rect2(0, 32, 32, 32)
+atlas = ExtResource("2_g8maf")
+region = Rect2(4096, 0, 2048, 2048)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q3fh1"]
 animations = [{
@@ -18,26 +34,53 @@ animations = [{
 "texture": SubResource("AtlasTexture_ufjxv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6fjlw")
+"texture": SubResource("AtlasTexture_ouaxw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rb7s")
 }],
 "loop": 1,
 "name": &"idle",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8maf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5h50b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fjlw")
+}],
+"loop": 1,
+"name": &"run",
+"speed": 6.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_q3fh1"]
-radius = 8.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qqu88"]
+radius = 13.0
+height = 98.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3fh1"]
+size = Vector2(11.2734375, 16.132813)
 
 [node name="TheKing" type="CharacterBody2D" unique_id=1973962456]
+z_index = 5
 script = ExtResource("1_g8maf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=435799768]
-position = Vector2(0, -9)
+position = Vector2(-2, -76)
+scale = Vector2(0.085, 0.085)
 sprite_frames = SubResource("SpriteFrames_q3fh1")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
-frame_progress = 0.73232794
+frame_progress = 0.38665354
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=234336135]
-position = Vector2(0, -9)
-shape = SubResource("CircleShape2D_q3fh1")
+position = Vector2(5, -56)
+shape = SubResource("CapsuleShape2D_qqu88")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1086551547]
+position = Vector2(11, -124)
+shape = SubResource("RectangleShape2D_q3fh1")

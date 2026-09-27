@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjxrhcxdxrvxd"
-path="res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"
+uid="uid://xxq57qmrf5at"
+path="res://.godot/imported/Spikes.png-a542ca84cd9075ab3d6e8dfb75869791.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tile Sheets/wood.png"
-dest_files=["res://.godot/imported/wood.png-adecb4192cc049d1955c0e0ba1b9bd5d.ctex"]
+source_file="res://assets/Tile Sheets/Spikes.png"
+dest_files=["res://.godot/imported/Spikes.png-a542ca84cd9075ab3d6e8dfb75869791.ctex"]
 
 [params]
 
